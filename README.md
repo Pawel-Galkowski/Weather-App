@@ -1,4 +1,4 @@
-# vue-weather
+# Weather App
 
 Application which are showing temperature in cities.
 Background is changing for the image from the choosen city.
