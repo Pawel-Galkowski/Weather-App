@@ -58,7 +58,6 @@ export default {
                 .then(this.setResults);
         },
         setResults(results) {
-            console.log(results);
             if (results.cod !== "404") {
                 this.weather = results;
             } else
@@ -86,11 +85,12 @@ export default {
             return `${day} ${monthNames[month]} ${year}`;
         },
         setPhoto(result) {
-            if (result.results.lenght > 0) {
-                this.photo = result.results[0].urls.full;
+            if (result.results.length > 0) {
+                let background = result.results[0].urls.full;
+                this.photo = background;
                 document.getElementById(
                     "app"
-                ).style.backgroundImage = `url('${this.photo}')`;
+                ).style.backgroundImage = `url('${background}')`;
             } else {
                 this.photo = defaultPhoto;
             }
@@ -139,7 +139,10 @@ main {
     margin: 0 auto;
 }
 
-.weather-wrap,
+.weather-wrap {
+    margin-top: 4rem;
+}
+
 .weather-box {
     margin-top: 2rem;
 }
