@@ -1,24 +1,30 @@
 # vue-weather
 
-## Project setup
-```
+Application which are showing temperature in cities.
+Background is changing for the image from the choosen city.
+
+## Technology stack
+    - Vue.Js
+    - HTML5
+    - CSS
+
+## Installation
+To install appliaction you need to have a YARN.
+
+After all you need to type in manager
+
+```yarn
 yarn install
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Usage
+To use application for production you need to type
 
-### Compiles and minifies for production
-```
+```yarn
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## License
+[ISC](https://choosealicense.com/licenses/isc/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
