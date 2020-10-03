@@ -11,7 +11,7 @@ Background is changing for the image from the choosen city.
 ## Installation
 To install appliaction you need to have a YARN.
 
-After all you need to type in manager
+At the start you need to type in manager
 
 ```yarn
 yarn install
